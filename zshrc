@@ -64,9 +64,12 @@ ZSH_CUSTOM=$ZSH_CONFIG/custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker git git-extras mvn pj)
+plugins=(git git-extras mvn pj osx extract)
 
 source $ZSH/oh-my-zsh.sh
+
+# Exports
+source ~/.zsh_env.sh
 
 # User configuration
 

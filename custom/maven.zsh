@@ -1,6 +1,6 @@
-alias mvn.install.skip="mvn clean install -DskipTests"
-
-alias mvn.install.docker="mvn clean install -PdockerBuild"
+alias mci='mvn clean install'
+alias mci_skip='mvn clean install -DskipTests'
+alias mcis=mci_skip
 
 function mvn.archetype() {
     mvn archetype:generate -DarchetypeArtifactId=maven-archetype-archetype -DgroupId=$1 -DartifactId=$2 ;
