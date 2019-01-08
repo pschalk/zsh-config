@@ -28,8 +28,7 @@ function mvn() {
   STOP="/"
 
   # Location of Maven.
-  # $MVN_HOME/bin/mvn is an option...
-  MVN_CMD="/usr/share/maven/bin/mvn"
+  MVN_CMD="$MVN_HOME/bin/mvn"
 
   # ----------------------------------------------------------------------------
   # Don't edit below this line

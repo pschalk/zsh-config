@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Exports
+source ~/.zsh_env.sh
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -67,9 +70,6 @@ ZSH_CUSTOM=$ZSH_CONFIG/custom
 plugins=(git git-extras mvn pj osx extract)
 
 source $ZSH/oh-my-zsh.sh
-
-# Exports
-source ~/.zsh_env.sh
 
 # User configuration
 
