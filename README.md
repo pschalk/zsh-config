@@ -17,9 +17,10 @@ Then:
 
 ## Post install
 
-### Maven
+### Exports
 
-Setup the location of your maven installation in `custom/maven.zsh`
+Could be located here: ~/.zsh_env.sh
+
 
 ### Project Jump
 
