@@ -2,7 +2,7 @@
 
 This is my `.zshrc` configuration. I version it via git so I can revert when I spoil something. Also, maybe some of this stuff might be interesting for anyone out there.
 
-Inspired by @jangalinski https://github.com/jangalinski/zsh-config/
+Inspired by @zambrovski https://github.com/zambrovski/zsh-config/
 
 ## Installation
 
