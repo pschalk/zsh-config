@@ -11,9 +11,7 @@ function start_agent {
 	. "${SSH_ENV}" > /dev/null
 
 	# Adding keys
-	ssh-add $HOME/.ssh/nas
-	ssh-add $HOME/.ssh/gitlab_rsa
-	ssh-add $HOME/.ssh/github_rsa
+	ssh-add $HOME/.ssh/id_ed25519
 }
 
 # Source SSH settings

@@ -20,3 +20,40 @@ function mvn.install-file() {
       -Dfile=$1
 }
 
+# dynamically choose mvnw or global.
+function mvn() {
+
+  # Stop the search on this folder.
+  # "/" is the highest possible, but you can go for $HOME for example
+  STOP="/Users/patrickschalk"
+  MVN_CMD="/opt/homebrew/Cellar/maven/current/bin/mvn"
+
+  # ----------------------------------------------------------------------------
+  # Don't edit below this line
+  #
+  DIR="$( pwd )"
+  FILE="null"
+
+  while [ $DIR != $STOP ]
+  do
+    if [ -e $DIR/mvnw ]
+      then
+        FILE="$DIR/mvnw"
+        break
+      else
+        DIR="$( dirname "$DIR" )"
+    fi
+  done
+
+  if [ $FILE != "null" ]
+    then
+      CMD=$FILE
+    else
+      CMD=$MVN_CMD
+  fi
+
+  # execute maven command with args
+  echo "Calling $CMD $@"
+  $CMD $@
+}
+
